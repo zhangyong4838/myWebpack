@@ -13,10 +13,11 @@ module.exports = {
             {
                 test:/.(png|gif|jpe?g)$/,
                 use:{
-                    loader:'file-loader',
+                    loader:'url-loader',
                     options:{
                         name:'[name].[ext]',
-                        outputPath:'assets/images/'
+                        outputPath:'assets/images/',
+                        limit:3*1024//对小体积的资源图片进行管理，小图片转成base64,减少请求数量
                     }
                 },
             },
