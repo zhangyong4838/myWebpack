@@ -1,4 +1,5 @@
-import pic from './assets/images/logo.png'
+import pic from './assets/images/logo.png';
+import css from './assets/css/index.css'
 console.log(pic);
 
 var img = new Image()
