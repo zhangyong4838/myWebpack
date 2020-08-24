@@ -5,5 +5,13 @@ module.exports = {
         path:path.resolve(__dirname,'./dist'),
         filename:'[name].js'
     },
-    mode:'development'
+    mode:'development',
+    module:{
+        rules:[
+            {
+                test:/.png$/,
+                use:'file-loader',
+            }
+        ]
+    }
 }
