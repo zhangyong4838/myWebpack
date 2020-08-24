@@ -1,4 +1,6 @@
 const path = require('path')
+const htmlwebpackplugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
     entry:'./src/index.js',
     output:{
@@ -9,15 +11,25 @@ module.exports = {
     module:{
         rules:[
             {
-                test:/.png$/,
-                use:'file-loader',
+                test:/.(png|gif|jpe?g)$/,
+                use:{
+                    loader:'file-loader',
+                    options:{
+                        name:'[path][name].[ext]'
+                    }
+                },
             },
             {
                 test:/.css$/,
-                use:[
-                    'style-loader','css-loader'
-                ],
+                use:['style-loader','css-loader'],
             },
         ]
-    }
+    },
+    plugins:[
+        new htmlwebpackplugin({
+            template:'./src/assets/html/index.html',
+            filename:'assets/html/index.html'
+        }),
+        new CleanWebpackPlugin()
+    ]
 }

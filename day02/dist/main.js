@@ -153,7 +153,7 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"837a8d31f9e6b310a514025d2696a4e4.png\");\n\n//# sourceURL=webpack:///./src/assets/images/logo.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/images/logo.png\");\n\n//# sourceURL=webpack:///./src/assets/images/logo.png?");
 
 /***/ }),
 
