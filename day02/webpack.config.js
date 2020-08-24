@@ -15,7 +15,8 @@ module.exports = {
                 use:{
                     loader:'file-loader',
                     options:{
-                        name:'[path][name].[ext]'
+                        name:'[name].[ext]',
+                        outputPath:'assets/images/'
                     }
                 },
             },
@@ -28,7 +29,7 @@ module.exports = {
     plugins:[
         new htmlwebpackplugin({
             template:'./src/assets/html/index.html',
-            filename:'assets/html/index.html'
+            filename:'index.html'
         }),
         new CleanWebpackPlugin()
     ]
