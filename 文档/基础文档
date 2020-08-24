@@ -1,0 +1,13 @@
+webpack安装
+    1.创建项目：
+    2.执行 npm init
+    项目安装（推荐）（局部安装）：
+        npm install webpack webpack-cli -D
+
+    全局安装：
+webpack启动方式：
+    零配置：
+    默认的入口文件：./src/index.js
+    默认的出口文件：输出目录dist，输出资源的名称main.js
+    1. npx webpack ---> 去当前文件中的node_modules文件夹下面的 bin文件夹下找到webpack执行启动
+    2.在package.json文件中的scripts中添加 'dev':'webpack',然后执行 npm run dev
