@@ -22,6 +22,15 @@ module.exports = {
                 },
             },
             {
+                test:/.(woff|exo)$/,
+                use:{
+                    loader:'file-loader',
+                    options:{
+                        name:'[name].[ext]',
+                    }
+                },
+            },
+            {
                 test:/.css$/,
                 use:['style-loader','css-loader'],
             },
