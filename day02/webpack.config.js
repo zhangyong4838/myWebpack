@@ -8,6 +8,9 @@ module.exports = {
         filename:'[name].js'
     },
     mode:'development',
+    resolveLoader:{
+        modules:['./node_modules','./myLoaders']
+    },
     module:{
         rules:[
             {
@@ -36,16 +39,19 @@ module.exports = {
             },
             {
                 test:/.less$/,
-                use:['style-loader','css-loader','less-loader']
+                use:['styleLoader','cssLoader','lessLoader']
             },
             {
                 test:/.js$/,
-                use:{
-                    loader:path.resolve(__dirname,'./myLoaders/replaceLoader.js'),
-                    options:{
-                        name:'老汉'
+                use:[
+                    'replaceLoader',
+                    {
+                        loader:'replaceLoaderAsync',
+                        options:{
+                            name:'老汉'
+                        }
                     }
-                }
+                ]
             }
         ]
     },

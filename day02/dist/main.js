@@ -86,14 +86,26 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/assets/css/index.less":
+/*!***********************************!*\
+  !*** ./src/assets/css/index.less ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const ele = document.createElement('style');\n        ele.innerHTML = \"body div {\\n  border: 1px solid red;\\n}\\n\";\n        document.head.appendChild(ele);\n    \n\n//# sourceURL=webpack:///./src/assets/css/index.less?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("// import pic from './assets/images/logo.png';\r\n// import css from './assets/css/index.less'\r\n// console.log(pic);\r\n\r\n// var img = new Image()\r\n// img.src = pic;\r\n// var root = document.getElementById('app')\r\n// root.append(img)\r\n\r\n\r\nconsole.log('hello 老汉');\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_index_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/index.less */ \"./src/assets/css/index.less\");\n/* harmony import */ var _assets_css_index_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_css_index_less__WEBPACK_IMPORTED_MODULE_0__);\n// import pic from './assets/images/logo.png';\r\n\r\n// console.log(pic);\r\n\r\n// var img = new Image()\r\n// img.src = pic;\r\n// var root = document.getElementById('app')\r\n// root.append(img)\r\n\r\n\r\nconsole.log('你好 哈哈哈');\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
