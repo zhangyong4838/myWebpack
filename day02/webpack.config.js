@@ -37,6 +37,15 @@ module.exports = {
             {
                 test:/.less$/,
                 use:['style-loader','css-loader','less-loader']
+            },
+            {
+                test:/.js$/,
+                use:{
+                    loader:path.resolve(__dirname,'./myLoaders/replaceLoader.js'),
+                    options:{
+                        name:'老汉'
+                    }
+                }
             }
         ]
     },
